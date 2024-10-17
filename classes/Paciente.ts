@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export class Paciente{
     private _nome:string;
     private _idade:number
@@ -28,5 +27,3 @@ export class Paciente{
     }
     
 }
-=======
->>>>>>> 4edc3e7d568d41568cf5abe0b95ed164bc234d2a
