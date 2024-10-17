@@ -1,7 +1,7 @@
-import { Receita } from "./Receita";
-import { Consulta } from "./Consulta";
-import { Medico } from "./Medico";
-import { Paciente } from "./Paciente";
+import { Receita } from "../classes/Receita";
+import { Consulta } from "../classes/Consulta";
+import { Medico } from "../classes/Medico";
+import { Paciente } from "../classes/Paciente";
 
 describe('receita', () =>{
 

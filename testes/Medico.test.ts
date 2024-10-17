@@ -1,4 +1,4 @@
-import { Medico } from "./Medico";
+import { Medico } from "../classes/Medico";
 
 
 

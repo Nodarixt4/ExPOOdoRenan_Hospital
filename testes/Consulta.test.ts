@@ -1,6 +1,6 @@
-import { Medico } from "./Medico";
-import { Paciente } from "./Paciente";
-import { Consulta } from "./Consulta";
+import { Medico } from "../classes/Medico";
+import { Paciente } from "../classes/Paciente";
+import { Consulta } from "../classes/Consulta";
 
 let medico:Medico
 let paciente:Paciente
