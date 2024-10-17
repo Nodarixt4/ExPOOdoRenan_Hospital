@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Nodarixt4/coisaPoo#readme",
   "dependencies": {
+    "coisapoo": "file:",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
