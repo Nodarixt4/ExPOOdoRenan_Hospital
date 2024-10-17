@@ -116,7 +116,6 @@ describe('Medico', () =>{
         }
     });
     
-
     test("Falha na autenticação", () => {
         const medico = new Medico("Cristiano Ronaldo", "123456", "Cardiologista");
         medico.gerarCodigoAutenticacao();
