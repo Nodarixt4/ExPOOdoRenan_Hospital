@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export class Medico{
     private _nome:string;
     private _credencial: string;
@@ -57,5 +56,4 @@ export class Medico{
 	}
 	
 }
-=======
->>>>>>> 4edc3e7d568d41568cf5abe0b95ed164bc234d2a
+
