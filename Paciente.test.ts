@@ -1,5 +1,5 @@
 
-import { Paciente } from "../classes/Paciente";
+import { Paciente } from "./Paciente";
 
 describe('paciente', () =>{
     

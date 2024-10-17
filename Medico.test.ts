@@ -1,4 +1,4 @@
-import { Medico } from "../classes/Medico";
+import { Medico } from "./Medico";
 
 describe('Medico', () => {
     // TESTE NOME

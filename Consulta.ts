@@ -1,6 +1,7 @@
 import { Medico } from "./Medico";
 import { Paciente } from "./Paciente";
 
+
 export class Consulta{
     private _medico: Medico;
     private _dataC: Date;
