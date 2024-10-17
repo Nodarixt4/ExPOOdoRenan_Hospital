@@ -65,7 +65,7 @@ export class Consulta{
         if((dayDiff >= 1 && dayDiff <= 60)){
             console.log('Consulta Marcada');   
         } else{
-            throw new Error('Data escolhida para a consulta está muito longe');
+            throw new Error('Data escolhida está inválida');
         }
     }
     
