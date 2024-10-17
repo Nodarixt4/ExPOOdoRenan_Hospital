@@ -38,20 +38,20 @@ export class Medico{
 	//topico 4
 
 	public gerarCodigoAutenticacao(): void {
-        this._codigoAutenticacao = Math.floor(100000 + Math.random() * 900000).toString();  // Gera um código de 6 dígitos
-        console.log(`Código de autenticação enviado: ${this._codigoAutenticacao}`);
+        this._codigoAutenticacao = Math.floor(100000 + Math.random() * 900000).toString();  //parada que gera o código de 6 digitos
+        console.log(`Código de autenticação do médico: ${this._codigoAutenticacao}`);
     }
 
 
-    public validarCodigoAutenticacao(codigo: string): boolean {
+    public Autenticacao(codigo: string): boolean {
         return this._codigoAutenticacao === codigo;
     }
 
-    public emitirReceita(codigoAutenticacao: string): string {
-        if (this.validarCodigoAutenticacao(codigoAutenticacao)) {
-            return "Receita emitida com sucesso.";
+    public ValidarAutentificacao(codigoAutenticacao: string): string {
+        if (this.Autenticacao(codigoAutenticacao)) {
+            return "Passou...código existente.";
         } else {
-            throw new Error("Falha na autenticação. Receita não emitida.");
+            throw new Error("Erro 404 --- Falha na autenticação...código não existe");
         }
 	}
 }
