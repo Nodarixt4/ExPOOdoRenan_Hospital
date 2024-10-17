@@ -116,7 +116,11 @@ describe('Medico', () => {
     test("Falha na autenticação", () => {
         const medico = new Medico("Cristiano Ronaldo", "123456", "Cardiologista");
         medico.gerarCodigoAutenticacao();
+
         expect(() => medico.ValidarAutentificacao("000000")).toThrow("Falha na autenticação. Receita não emitida.");
     });
 
 })
+     
+    
+
