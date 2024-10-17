@@ -36,7 +36,6 @@ export class Medico{
 	}
 
 	//topico 4
-
 	public gerarCodigoAutenticacao(): void {
         this._codigoAutenticacao = Math.floor(100000 + Math.random() * 900000).toString();  //parada que gera o código de 6 digitos
         console.log(`Código de autenticação do médico: ${this._codigoAutenticacao}`);
