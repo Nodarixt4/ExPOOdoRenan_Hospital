@@ -43,10 +43,10 @@ describe('receita', () =>{
     })
 
     test("Verificando Data Valida", () => {
-        expect(() => new Receita("Dipirona", consulta, new Date('2024-11-06')).verificarData()).not.toThrow(Error);
+        expect(() => new Receita("Dipirona", consulta, new Date('2024-11-05')).verificarData()).not.toThrow(Error);
     })
 
-    test("Verificando Data Valida", () => {
+    test("Verificando Data Invalida", () => {
         expect(() => new Receita("Dipirona", consulta, new Date('2024-11-06')).verificarData()).toThrow(Error);
     })
     
