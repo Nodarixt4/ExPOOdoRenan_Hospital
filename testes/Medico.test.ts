@@ -110,7 +110,7 @@ describe('Medico', () =>{
         medico.gerarCodigoAutenticacao();
         const codigo = medico['_codigoAutenticacao'];
         if (codigo) {
-            expect(medico.emitirReceita(codigo)).toBe("Receita emitida com sucesso.");
+            expect(medico.ValidarAutentificacao(codigo)).toBe("Receita emitida com sucesso.");
         } else {
             throw new Error("Código de autenticação não foi gerado corretamente.");
         }
@@ -120,7 +120,7 @@ describe('Medico', () =>{
     test("Falha na autenticação", () => {
         const medico = new Medico("Cristiano Ronaldo", "123456", "Cardiologista");
         medico.gerarCodigoAutenticacao();
-        expect(() => medico.emitirReceita("000000")).toThrow("Falha na autenticação. Receita não emitida.");
+        expect(() => medico.ValidarAutentificacao("000000")).toThrow("Falha na autenticação. Receita não emitida.");
     });    
     
 })
