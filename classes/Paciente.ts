@@ -25,4 +25,5 @@ export class Paciente{
             throw new Error("Idade Invalida");
         }
     }
+    
 }

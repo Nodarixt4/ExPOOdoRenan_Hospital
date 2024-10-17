@@ -54,4 +54,5 @@ export class Medico{
             throw new Error("Erro 404 --- Falha na autenticação...código não existe");
         }
 	}
+	
 }

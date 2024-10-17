@@ -68,5 +68,6 @@ export class Consulta{
             throw new Error('Data escolhida para a consulta está muito longe');
         }
     }
+    
 
 }

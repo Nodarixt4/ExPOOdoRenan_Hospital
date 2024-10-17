@@ -42,4 +42,5 @@ export class Receita {
             throw new Error('Erro! Data da Receita difere da Data da Consulta.');
 		}
     }
+	
 }

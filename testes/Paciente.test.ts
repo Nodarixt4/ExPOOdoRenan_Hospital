@@ -48,4 +48,5 @@ describe('paciente', () =>{
         expect(() => new Paciente("Lucas", 120)).toThrow(Error);
     })
 
+    
 })

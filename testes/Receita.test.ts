@@ -46,4 +46,5 @@ describe('receita', () =>{
         expect(() => new Receita("Dipirona", consulta, new Date('2024-11-06')).verificarData()).toThrow(Error);
     })
     
+    
 })

@@ -119,5 +119,6 @@ describe('Medico', () =>{
         medico.gerarCodigoAutenticacao();
         expect(() => medico.ValidarAutentificacao("000000")).toThrow("Erro 404 --- Falha na autenticação...código não existe");
     });    
+     
     
 })

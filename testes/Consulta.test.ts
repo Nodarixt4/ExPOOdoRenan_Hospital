@@ -40,4 +40,5 @@ describe('Consulta', () => {
     const consulta = new Consulta(medico, new Date('2024-10-10'), paciente);
     expect(consulta.dataC.getTime()).not.toBe(new Date('2025-05-25').getTime()); // O teste deve passar
    });
+   
 })
