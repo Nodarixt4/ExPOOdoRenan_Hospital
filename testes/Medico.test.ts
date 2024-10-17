@@ -117,7 +117,7 @@ describe('Medico', () => {
     test("Falha na autenticação", () => {
         const medico = new Medico("Cristiano Ronaldo", "123456", "Cardiologista");
         medico.gerarCodigoAutenticacao();
-
+        
         expect(() => medico.validarAutentificacao("000000")).toThrow("Erro 404 --- Falha na autenticação...código não existe");
     });
 });
