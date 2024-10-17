@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Receita } from "../classes/Receita";
 import { Consulta } from "../classes/Consulta";
 import { Medico } from "../classes/Medico";
@@ -48,3 +49,5 @@ describe('receita', () =>{
     
     
 })
+=======
+>>>>>>> 4edc3e7d568d41568cf5abe0b95ed164bc234d2a
