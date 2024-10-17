@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { Paciente } from "../classes/Paciente";
 
 describe('paciente', () =>{
@@ -51,5 +51,4 @@ describe('paciente', () =>{
 
     
 })
-=======
->>>>>>> 4edc3e7d568d41568cf5abe0b95ed164bc234d2a
+
