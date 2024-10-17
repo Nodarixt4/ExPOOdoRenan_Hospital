@@ -54,7 +54,7 @@ var Consulta = /** @class */ (function () {
                 console.log('Consulta Marcada');
             }
             else {
-                throw new Error('Data escolhida para a consulta está muito longe');
+                throw new Error('Data escolhida está inválida');
             }
     };
     return Consulta;

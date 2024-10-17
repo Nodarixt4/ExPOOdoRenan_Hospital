@@ -22,8 +22,9 @@ var Medico = /** @class */ (function () {
             return this._credencial;
         },
         set: function (credencial) {
-            if (!isNaN(parseFloat(credencial)) && (credencial.length) === 6)
+            if (!isNaN(parseFloat(credencial)) && (credencial.length) === 6) {
                 this._credencial = credencial;
+            }
         },
         enumerable: false,
         configurable: true
@@ -38,16 +39,17 @@ var Medico = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    //topico 4
+    // Autenticação de Dois Fatores
     Medico.prototype.gerarCodigoAutenticacao = function () {
-        this._codigoAutenticacao = Math.floor(100000 + Math.random() * 900000).toString(); //parada que gera o código de 6 digitos
+        this._codigoAutenticacao = Math.floor(100000 + Math.random() * 900000).toString();
         console.log("C\u00F3digo de autentica\u00E7\u00E3o do m\u00E9dico: ".concat(this._codigoAutenticacao));
     };
-    Medico.prototype.Autenticacao = function (codigo) {
+    Medico.prototype.validarCodigoAutenticacao = function (codigo) {
         return this._codigoAutenticacao === codigo;
     };
-    Medico.prototype.ValidarAutentificacao = function (codigoAutenticacao) {
-        if (this.Autenticacao(codigoAutenticacao)) {
+    // (Opcional) - Autenticação com validação de erro
+    Medico.prototype.validarAutentificacao = function (codigoAutenticacao) {
+        if (this.validarCodigoAutenticacao(codigoAutenticacao)) { // Utiliza validarCodigo
             return "Passou...código existente.";
         }
         else {
