@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Medico } from "./Medico";
 import { Paciente } from "./Paciente";
 
@@ -72,5 +71,4 @@ export class Consulta{
     
 
 }
-=======
->>>>>>> 4edc3e7d568d41568cf5abe0b95ed164bc234d2a
+
